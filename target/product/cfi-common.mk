@@ -32,6 +32,7 @@ PRODUCT_CFI_INCLUDE_PATHS :=  \
     hardware/qcom/wlan/legacy/qcwcn/wpa_supplicant_8_lib \
     hardware/qcom/wlan/wcn6740/qcwcn/wpa_supplicant_8_lib \
     hardware/qcom/wlan/wcn7760/qcwcn/wpa_supplicant_8_lib \
+    hardware/qcom-caf/wlan/qcwcn/wpa_supplicant_8_lib \
     hardware/interfaces/keymaster \
     hardware/interfaces/security \
     packages/modules/Bluetooth/system \
