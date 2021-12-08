@@ -47,21 +47,6 @@ install_symlink {
     symlink_target: "/system/system_ext/etc/init/config",
 }
 
-// init.gsi.rc, GSI-specific init script.
-prebuilt_etc {
-    name: "init.gsi.rc",
-    src: "init.gsi.rc",
-    system_ext_specific: true,
-    relative_install_path: "init",
-}
-
-prebuilt_etc {
-    name: "init.vndk-nodef.rc",
-    src: "init.vndk-nodef.rc",
-    system_ext_specific: true,
-    relative_install_path: "gsi",
-}
-
 gsi_symlinks = [
     {
         target: "/system/system_ext",
@@ -112,8 +97,6 @@ android_filesystem_defaults {
         // gsi_release
         ///////////////////////////////////////////
         "gsi_skip_mount.cfg",
-        "init.gsi.rc",
-        "init.vndk-nodef.rc",
         // Overlay the GSI specific setting for framework and SystemUI
         "gsi_overlay_framework",
         "gsi_overlay_systemui",
